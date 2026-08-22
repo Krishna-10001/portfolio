@@ -1,0 +1,20 @@
+# Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/raw data you may not want in git (uncomment if needed)
+# data/raw/*
+# !data/raw/.gitkeep
+
+# Secrets
+.env
