@@ -1,3 +1,5 @@
+-- Create a table matching dataset schema for smooth integration and data compatibility. 
+
 CREATE TABLE company_financials (
     company TEXT NOT NULL,
     fiscal_year INTEGER NOT NULL,
