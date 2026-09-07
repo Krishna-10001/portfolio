@@ -14,6 +14,7 @@ SELECT
 	quarter_num,
 	revenue_cr,
 	headcount,
+	net_profit_cr,
 	ebit_margin_pct,
 	attrition_pct,
 
@@ -32,8 +33,14 @@ SELECT
 	quarter_num,
 	revenue_cr,
 	headcount,
+	net_profit_cr,
 	ebit_margin_pct,
 	attrition_pct,
+
+	ROUND(
+    	(net_profit_cr / NULLIF(revenue_cr, 0)) * 100 , 2
+    	
+	) AS net_profit_margin_pct ,
 
 	ROUND(
 		(revenue_cr - prev_quarter_revenue) / NULLIF(prev_quarter_revenue , 0) * 100 , 2
@@ -66,6 +73,10 @@ SELECT
 	ROUND(AVG(revenue_cr) , 0) AS avg_revenue_cr ,
 
 	ROUND(AVG(headcount) , 0) AS avg_headcount ,
+
+	ROUND(AVG(net_profit_cr) ,0) AS avg_net_profit_cr,
+
+	ROUND(AVG(net_profit_margin_pct) , 2) AS avg_net_profit_margin_pct,
 
 	ROUND(
 		AVG((revenue_cr * 10000000) / NULLIF(headcount , 0) ),0

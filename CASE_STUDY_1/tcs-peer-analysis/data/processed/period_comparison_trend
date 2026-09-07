@@ -1,9 +1,0 @@
-"company","period","quarters_included","growth_quarters_used","avg_revenue_cr","avg_headcount","avg_revenue_per_employee_inr","avg_revenue_qoq_growth_pct","avg_headcount_qoq_growth_pct","avg_decoupling_gap_pp","avg_ebit_margin_pct","avg_attrition_pct"
-"HCLTech","Period A (FY22 TO FY24)",12,11,24752,212176,1163896,3.29,2.36,0.93,18.43,17.81
-"HCLTech","Period B (FY25 TO FY27 Q1)",9,9,31309,223271,1401403,2.20,-0.17,2.36,17.66,12.77
-"Infosys","Period A (FY22 TO FY24)",12,11,35173,319091,1101137,2.89,1.61,1.28,21.58,20.40
-"Infosys","Period B (FY25 TO FY27 Q1)",9,9,43317,325505,1329968,2.72,0.38,2.34,20.76,13.33
-"TCS","Period A (FY22 TO FY24)",12,11,54842,588951,929688,2.77,1.56,1.21,24.64,16.19
-"TCS","Period B (FY25 TO FY27 Q1)",9,9,66069,600213,1101879,1.88,-0.13,2.01,24.60,13.18
-"Wipro","Period A (FY22 TO FY24)",12,11,21861,242352,901542,2.00,1.05,0.95,16.53,19.20
-"Wipro","Period B (FY25 TO FY27 Q1)",9,9,22910,236700,967563,1.10,0.42,0.68,17.08,14.53
