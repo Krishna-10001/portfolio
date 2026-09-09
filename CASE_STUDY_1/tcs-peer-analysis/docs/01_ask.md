@@ -27,7 +27,7 @@ three closest listed peers, extended through the most recently available quarter
 1. How do TCS's revenue, headcount, attrition rate, and EBIT margin trend quarter
    over quarter compared to Infosys, Wipro, and HCLTech from FY22 through Q1 FY27?
 2. Which company has decoupled revenue growth from headcount growth fastest,
-   measured by revenue-per-employee?
+   measured by the decoupling gap (revenue QoQ growth % minus headcount QoQ growth %)?
 3. Is TCS an outlier in the sector, or is the entire "WITCH" peer set moving the
    same direction at a similar pace?
 4. Does margin expansion across these companies correlate more strongly with
