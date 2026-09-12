@@ -26,7 +26,9 @@ SELECT
 
 	LAG(revenue_cr) OVER(PARTITION BY company ORDER BY fiscal_year , quarter_num ) AS prev_quarter_revenue ,
 
-	LAG(headcount) OVER(PARTITION BY company ORDER BY fiscal_year , quarter_num ) AS prev_quarter_headcount 
+	LAG(headcount) OVER(PARTITION BY company ORDER BY fiscal_year , quarter_num ) AS prev_quarter_headcount ,
+
+	LAG(ebit_margin_pct) OVER(PARTITION BY company ORDER BY fiscal_year , quarter_num ) AS prev_quarter_ebit_margin 
 
 FROM company_financials
 ) 
@@ -63,6 +65,10 @@ SELECT
 	ROUND(
 		(revenue_cr * 10000000) / NULLIF(headcount , 0) ,0
 	) AS revenue_per_employee_inr ,	
+
+	ROUND(
+		(ebit_margin_pct - prev_quarter_ebit_margin ) , 2 
+	) AS margin_change_pp ,
 
 
 	CASE 
