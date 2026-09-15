@@ -1,0 +1,1338 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...creator-author-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dashboard_dataset' inline='true' name='federated.174visr170rr5s1g41j7m0wqbp9t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dashboard_dataset' name='textscan.0916t4a022oyd61a0rdeb1gojhse'>
+            <connection class='textscan' directory='C:/Users/asus/Desktop/PORTFOLIO/CASE_STUDY_1/tcs-peer-analysis/data/processed' filename='dashboard_dataset' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0916t4a022oyd61a0rdeb1gojhse' name='dashboard_dataset' table='[dashboard_dataset]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='integer' name='fiscal_year' ordinal='1' />
+            <column datatype='integer' name='quarter_num' ordinal='2' />
+            <column datatype='integer' name='revenue_cr' ordinal='3' />
+            <column datatype='integer' name='headcount' ordinal='4' />
+            <column datatype='integer' name='net_profit_cr' ordinal='5' />
+            <column datatype='real' name='ebit_margin_pct' ordinal='6' />
+            <column datatype='real' name='attrition_pct' ordinal='7' />
+            <column datatype='real' name='net_profit_margin_pct' ordinal='8' />
+            <column datatype='real' name='revenue_qoq_growth_pct' ordinal='9' />
+            <column datatype='real' name='headcount_qoq_growth_pct' ordinal='10' />
+            <column datatype='real' name='decoupling_gap_pp' ordinal='11' />
+            <column datatype='integer' name='revenue_per_employee_inr' ordinal='12' />
+            <column datatype='real' name='margin_change_pp' ordinal='13' />
+            <column datatype='string' name='period' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiscal_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fiscal_year]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>fiscal_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quarter_num]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>quarter_num</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_cr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue_cr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_cr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>headcount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[headcount]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>headcount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_profit_cr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[net_profit_cr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>net_profit_cr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ebit_margin_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ebit_margin_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>ebit_margin_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attrition_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[attrition_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>attrition_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_profit_margin_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_profit_margin_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>net_profit_margin_pct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_qoq_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_qoq_growth_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_qoq_growth_pct</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>headcount_qoq_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[headcount_qoq_growth_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>headcount_qoq_growth_pct</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decoupling_gap_pp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[decoupling_gap_pp]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>decoupling_gap_pp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_per_employee_inr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue_per_employee_inr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_per_employee_inr</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>margin_change_pp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[margin_change_pp]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>margin_change_pp</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+      </column>
+      <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+      </column>
+      <column caption='Period Decoupling Change' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_0765855279669254]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &gt;= 2025&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}&#13;&#10;-&#13;&#10;{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &lt;= 2024&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}' />
+      </column>
+      <column caption='dashboard_dataset' datatype='table' name='[__tableau_internal_object_id__].[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]' role='measure' type='quantitative' />
+      <column caption='Attrition Pct' datatype='real' name='[attrition_pct]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+      <column caption='Ebit Margin Pct' datatype='real' name='[ebit_margin_pct]' role='measure' type='quantitative' />
+      <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+      <column caption='Headcount' datatype='integer' name='[headcount]' role='measure' type='quantitative' />
+      <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+      <column caption='Margin Change Pp' datatype='real' name='[margin_change_pp]' role='measure' type='quantitative' />
+      <column caption='Net Profit Cr' datatype='integer' name='[net_profit_cr]' role='measure' type='quantitative' />
+      <column caption='Net Profit Margin Pct' datatype='real' name='[net_profit_margin_pct]' role='measure' type='quantitative' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+      <column caption='Revenue Cr' datatype='integer' name='[revenue_cr]' role='measure' type='quantitative' />
+      <column caption='Revenue Per Employee Inr' datatype='integer' name='[revenue_per_employee_inr]' role='measure' type='quantitative' />
+      <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/asus/AppData/Local/Temp/TableauTemp/#TableauTemp_0h2e15k0r1bq5p1ej4p8800k9wma.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/15/2026 11:21:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fiscal_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fiscal_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fiscal_year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quarter_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quarter_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quarter_num</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_cr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue_cr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_cr</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>headcount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[headcount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>headcount</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_profit_cr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[net_profit_cr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_profit_cr</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ebit_margin_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ebit_margin_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ebit_margin_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attrition_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[attrition_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attrition_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_profit_margin_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_profit_margin_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_profit_margin_pct</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_qoq_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue_qoq_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_qoq_growth_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>headcount_qoq_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[headcount_qoq_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>headcount_qoq_growth_pct</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>decoupling_gap_pp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[decoupling_gap_pp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>decoupling_gap_pp</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_per_employee_inr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue_per_employee_inr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_per_employee_inr</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>margin_change_pp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[margin_change_pp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>margin_change_pp</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>period</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>period</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dashboard_dataset' id='dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D'>
+            <properties context=''>
+              <relation connection='textscan.0916t4a022oyd61a0rdeb1gojhse' name='dashboard_dataset' table='[dashboard_dataset]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='company' ordinal='0' />
+                  <column datatype='integer' name='fiscal_year' ordinal='1' />
+                  <column datatype='integer' name='quarter_num' ordinal='2' />
+                  <column datatype='integer' name='revenue_cr' ordinal='3' />
+                  <column datatype='integer' name='headcount' ordinal='4' />
+                  <column datatype='integer' name='net_profit_cr' ordinal='5' />
+                  <column datatype='real' name='ebit_margin_pct' ordinal='6' />
+                  <column datatype='real' name='attrition_pct' ordinal='7' />
+                  <column datatype='real' name='net_profit_margin_pct' ordinal='8' />
+                  <column datatype='real' name='revenue_qoq_growth_pct' ordinal='9' />
+                  <column datatype='real' name='headcount_qoq_growth_pct' ordinal='10' />
+                  <column datatype='real' name='decoupling_gap_pp' ordinal='11' />
+                  <column datatype='integer' name='revenue_per_employee_inr' ordinal='12' />
+                  <column datatype='real' name='margin_change_pp' ordinal='13' />
+                  <column datatype='string' name='period' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Decoupling Gap Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Decoupling Gap Trend: Revenue Growth vs Headcount Growth</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855260295169]' derivation='Min' name='[min:Calculation_0765855260295169:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0765855259631616]' derivation='None' name='[none:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+            <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[decoupling_gap_pp]' derivation='Sum' name='[sum:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[headcount_qoq_growth_pct]' derivation='Sum' name='[sum:headcount_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_qoq_growth_pct]' derivation='Sum' name='[sum:revenue_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' direction='ASC' using='[federated.174visr170rr5s1g41j7m0wqbp9t].[min:Calculation_0765855260295169:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' scope='rows' value='Decoupling Gap (percentage points)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='No Decoupling' label-type='custom' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Quarter: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Decoupling Gap: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]> pp]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Revenue QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Headcount QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]>%]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]</cols>
+      </table>
+      <simple-id uuid='{B3DFD98A-83FC-4C31-A1D1-A6DF502F8D4A}' />
+    </worksheet>
+    <worksheet name='Decoupling Improvement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Period Decoupling Change' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_0765855279669254]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &gt;= 2025&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}&#13;&#10;-&#13;&#10;{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &lt;= 2024&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0765855279669254]' derivation='Sum' name='[sum:Calculation_0765855279669254:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' field-type='quantitative' max='0.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' scope='cols' value='Change in Average Decoupling Gap (pp)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Change in Average Decoupling Gap:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]>pp]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Positive = Improvement</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>Negative = Decline</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]</cols>
+      </table>
+      <simple-id uuid='{8BA618A0-807C-4F9E-9089-A1C050380985}' />
+    </worksheet>
+    <worksheet name='Period Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column-instance column='[decoupling_gap_pp]' derivation='Avg' name='[avg:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' scope='rows' value='Average Decoupling Gap (percentage points)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Company:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Period:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Avg. Decoupling Gap Pp:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]> pp]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk] * [federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk])</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</cols>
+      </table>
+      <simple-id uuid='{EB0EC8F5-8E5C-4726-B1F3-4ACD44E78123}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Decoupling Gap Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]</field>
+            <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BFB16507-95B0-4355-B373-7D4C6F51EDC0}' />
+    </window>
+    <window class='worksheet' name='Period Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;HCLTech&quot;</bucket>
+                </multibucket>
+                <axis>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</field>
+            <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4437F9CA-D20A-4943-B2AA-B83DC18DEAD4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Decoupling Improvement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F2E6B67C-A76B-4D77-8E80-CC71EB95E662}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Decoupling Gap Trend' width='192'>
+      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
+      A9E6MWmYL2eJAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Decoupling Improvement' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Period Comparison' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
