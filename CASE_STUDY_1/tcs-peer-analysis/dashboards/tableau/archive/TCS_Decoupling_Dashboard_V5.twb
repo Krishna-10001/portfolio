@@ -1,0 +1,3075 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...creator-author-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='1be02db7d4c4a03e07263699a5057bf814eb360ac69e04abfe70baf2d3bcffeb' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dashboard_dataset' inline='true' name='federated.174visr170rr5s1g41j7m0wqbp9t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dashboard_dataset' name='textscan.0916t4a022oyd61a0rdeb1gojhse'>
+            <connection class='textscan' directory='C:/Users/asus/Desktop/PORTFOLIO/CASE_STUDY_1/tcs-peer-analysis/data/processed' filename='dashboard_dataset' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0916t4a022oyd61a0rdeb1gojhse' name='dashboard_dataset' table='[dashboard_dataset]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='integer' name='fiscal_year' ordinal='1' />
+            <column datatype='integer' name='quarter_num' ordinal='2' />
+            <column datatype='integer' name='revenue_cr' ordinal='3' />
+            <column datatype='integer' name='headcount' ordinal='4' />
+            <column datatype='integer' name='net_profit_cr' ordinal='5' />
+            <column datatype='real' name='ebit_margin_pct' ordinal='6' />
+            <column datatype='real' name='attrition_pct' ordinal='7' />
+            <column datatype='real' name='net_profit_margin_pct' ordinal='8' />
+            <column datatype='real' name='revenue_qoq_growth_pct' ordinal='9' />
+            <column datatype='real' name='headcount_qoq_growth_pct' ordinal='10' />
+            <column datatype='real' name='decoupling_gap_pp' ordinal='11' />
+            <column datatype='integer' name='revenue_per_employee_inr' ordinal='12' />
+            <column datatype='real' name='margin_change_pp' ordinal='13' />
+            <column datatype='string' name='period' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiscal_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fiscal_year]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>fiscal_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quarter_num]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>quarter_num</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_cr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue_cr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_cr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>headcount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[headcount]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>headcount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_profit_cr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[net_profit_cr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>net_profit_cr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ebit_margin_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ebit_margin_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>ebit_margin_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attrition_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[attrition_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>attrition_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_profit_margin_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_profit_margin_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>net_profit_margin_pct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_qoq_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_qoq_growth_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_qoq_growth_pct</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>headcount_qoq_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[headcount_qoq_growth_pct]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>headcount_qoq_growth_pct</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decoupling_gap_pp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[decoupling_gap_pp]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>decoupling_gap_pp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_per_employee_inr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue_per_employee_inr]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>revenue_per_employee_inr</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>margin_change_pp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[margin_change_pp]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>margin_change_pp</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[dashboard_dataset]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TCS Decoupling Improvement' datatype='real' name='[Calculation_0268326979305472]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(&#13;&#10;    IF [company] = &quot;TCS&quot;&#13;&#10;    AND [period] = &quot;Period B (FY25 TO FY27 Q1)&quot;&#13;&#10;    THEN [decoupling_gap_pp]&#13;&#10;    END&#13;&#10;)&#13;&#10;-&#13;&#10;AVG(&#13;&#10;    IF [company] = &quot;TCS&quot;&#13;&#10;    AND [period] = &quot;Period A (FY22 TO FY24)&quot;&#13;&#10;    THEN [decoupling_gap_pp]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+      </column>
+      <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+      </column>
+      <column caption='Period Decoupling Change' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_0765855279669254]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &gt;= 2025&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}&#13;&#10;-&#13;&#10;{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &lt;= 2024&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}' />
+      </column>
+      <column caption='dashboard_dataset' datatype='table' name='[__tableau_internal_object_id__].[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]' role='measure' type='quantitative' />
+      <column caption='Attrition Pct' datatype='real' name='[attrition_pct]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+      <column caption='Ebit Margin Pct' datatype='real' name='[ebit_margin_pct]' role='measure' type='quantitative' />
+      <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+      <column caption='Headcount' datatype='integer' name='[headcount]' role='measure' type='quantitative' />
+      <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+      <column caption='Margin Change Pp' datatype='real' name='[margin_change_pp]' role='measure' type='quantitative' />
+      <column caption='Net Profit Cr' datatype='integer' name='[net_profit_cr]' role='measure' type='quantitative' />
+      <column caption='Net Profit Margin Pct' datatype='real' name='[net_profit_margin_pct]' role='measure' type='quantitative' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+      <column caption='Revenue Cr' datatype='integer' name='[revenue_cr]' role='measure' type='quantitative' />
+      <column caption='Revenue Per Employee Inr' datatype='integer' default-format='n#,##0;-#,##0' name='[revenue_per_employee_inr]' role='measure' type='quantitative' />
+      <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+      <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/asus/AppData/Local/Temp/TableauTemp/#TableauTemp_0c9z1aj0s8bnsu11eecny08eh8iq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/15/2026 05:35:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fiscal_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fiscal_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fiscal_year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quarter_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quarter_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quarter_num</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_cr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue_cr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_cr</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>headcount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[headcount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>headcount</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_profit_cr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[net_profit_cr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_profit_cr</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ebit_margin_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ebit_margin_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ebit_margin_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attrition_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[attrition_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attrition_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_profit_margin_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_profit_margin_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_profit_margin_pct</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_qoq_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue_qoq_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_qoq_growth_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>headcount_qoq_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[headcount_qoq_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>headcount_qoq_growth_pct</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>decoupling_gap_pp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[decoupling_gap_pp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>decoupling_gap_pp</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_per_employee_inr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue_per_employee_inr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_per_employee_inr</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>margin_change_pp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[margin_change_pp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>margin_change_pp</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>period</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>period</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dashboard_dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:company:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;HCLTech&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Wipro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TCS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Infosys&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dashboard_dataset' id='dashboard_dataset_DCE4B05986F74440886BF6EF5A7C874D'>
+            <properties context=''>
+              <relation connection='textscan.0916t4a022oyd61a0rdeb1gojhse' name='dashboard_dataset' table='[dashboard_dataset]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='company' ordinal='0' />
+                  <column datatype='integer' name='fiscal_year' ordinal='1' />
+                  <column datatype='integer' name='quarter_num' ordinal='2' />
+                  <column datatype='integer' name='revenue_cr' ordinal='3' />
+                  <column datatype='integer' name='headcount' ordinal='4' />
+                  <column datatype='integer' name='net_profit_cr' ordinal='5' />
+                  <column datatype='real' name='ebit_margin_pct' ordinal='6' />
+                  <column datatype='real' name='attrition_pct' ordinal='7' />
+                  <column datatype='real' name='net_profit_margin_pct' ordinal='8' />
+                  <column datatype='real' name='revenue_qoq_growth_pct' ordinal='9' />
+                  <column datatype='real' name='headcount_qoq_growth_pct' ordinal='10' />
+                  <column datatype='real' name='decoupling_gap_pp' ordinal='11' />
+                  <column datatype='integer' name='revenue_per_employee_inr' ordinal='12' />
+                  <column datatype='real' name='margin_change_pp' ordinal='13' />
+                  <column datatype='string' name='period' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_BC03F347D8DF4ECF9E67BFEF0D9522F0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Company' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Attrition Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Attrition Trend: Workforce Turnover</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+            </column>
+            <column-instance column='[Calculation_0765855259631616]' derivation='Attribute' name='[attr:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column caption='Attrition Pct' datatype='real' name='[attrition_pct]' role='measure' type='quantitative' />
+            <column-instance column='[attrition_pct]' derivation='Avg' name='[avg:attrition_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_0765855260295169]' derivation='None' name='[none:Calculation_0765855260295169:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:Calculation_0765855259631616:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:attrition_pct:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855260295169:qk]</cols>
+      </table>
+      <simple-id uuid='{ACAD22B2-CB93-48A9-9231-8B3BF830022A}' />
+    </worksheet>
+    <worksheet name='Decoupling Gap Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='14'>Decoupling Gap Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+            </column>
+            <column caption='Attrition Pct' datatype='real' name='[attrition_pct]' role='measure' type='quantitative' />
+            <column-instance column='[ebit_margin_pct]' derivation='Avg' name='[avg:ebit_margin_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Ebit Margin Pct' datatype='real' name='[ebit_margin_pct]' role='measure' type='quantitative' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855260295169]' derivation='Min' name='[min:Calculation_0765855260295169:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0765855259631616]' derivation='None' name='[none:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+            <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[attrition_pct]' derivation='Sum' name='[sum:attrition_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[decoupling_gap_pp]' derivation='Sum' name='[sum:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[headcount_qoq_growth_pct]' derivation='Sum' name='[sum:headcount_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_qoq_growth_pct]' derivation='Sum' name='[sum:revenue_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' direction='ASC' using='[federated.174visr170rr5s1g41j7m0wqbp9t].[min:Calculation_0765855260295169:qk]' />
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:company:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:period:nk]' />
+          </filter>
+          <filter class='quantitative' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' scope='rows' value='Gap (pp)' />
+            <format attr='height' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='49' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='21' />
+            <format attr='font-size' data-class='subtotal' value='8' />
+            <format attr='color' data-class='subtotal' value='#1b1b1b' />
+            <format attr='font-size' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='true' />
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='font-size' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-color' id='refline0' value='#5555554b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:ebit_margin_pct:qk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:attrition_pct:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='No Decoupling' label-type='custom' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Quarter: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Decoupling Gap: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]> pp]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Revenue QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Headcount QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Attrition:<[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:attrition_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'>EBIT Margin:</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:ebit_margin_pct:qk]>]]></run>
+                <run bold='true'>%</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]</cols>
+      </table>
+      <simple-id uuid='{B3DFD98A-83FC-4C31-A1D1-A6DF502F8D4A}' />
+    </worksheet>
+    <worksheet name='Decoupling Improvement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Period Decoupling Change' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_0765855279669254]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &gt;= 2025&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}&#13;&#10;-&#13;&#10;{ FIXED [company] :&#13;&#10;    AVG(&#13;&#10;        IF [fiscal_year] &lt;= 2024&#13;&#10;        THEN [decoupling_gap_pp]&#13;&#10;        END&#13;&#10;    )&#13;&#10;}' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0765855279669254]' derivation='Sum' name='[sum:Calculation_0765855279669254:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' field-type='quantitative' max='0.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' scope='cols' value='Change in Average Decoupling Gap (pp)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Change in Average Decoupling Gap:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]>pp]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Positive = Improvement</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>Negative = Decline</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855279669254:qk]</cols>
+      </table>
+      <simple-id uuid='{8BA618A0-807C-4F9E-9089-A1C050380985}' />
+    </worksheet>
+    <worksheet name='KPI - TCS Decoupling Improvement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='TCS Decoupling Improvement' datatype='real' name='[Calculation_0268326979305472]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG(&#13;&#10;    IF [company] = &quot;TCS&quot;&#13;&#10;    AND [period] = &quot;Period B (FY25 TO FY27 Q1)&quot;&#13;&#10;    THEN [decoupling_gap_pp]&#13;&#10;    END&#13;&#10;)&#13;&#10;-&#13;&#10;AVG(&#13;&#10;    IF [company] = &quot;TCS&quot;&#13;&#10;    AND [period] = &quot;Period A (FY22 TO FY24)&quot;&#13;&#10;    THEN [decoupling_gap_pp]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0268326979305472]' derivation='User' name='[usr:Calculation_0268326979305472:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.174visr170rr5s1g41j7m0wqbp9t].[usr:Calculation_0268326979305472:qk]&quot;' user:op='manual' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='356' />
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[usr:Calculation_0268326979305472:qk]' value='*+0.00;-0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.174visr170rr5s1g41j7m0wqbp9t].[usr:Calculation_0268326979305472:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='9'>TCS DECOUPLING IMPROVEMENT</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='22'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[usr:Calculation_0268326979305472:qk]> pp]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.95552486181259155' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{221220ED-671B-4CC2-BC2B-F79345A933A4}' />
+    </worksheet>
+    <worksheet name='KPI - TCS Period B Decoupling'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column-instance column='[decoupling_gap_pp]' derivation='Avg' name='[avg:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]'>
+            <groupfilter function='member' level='[none:company:nk]' member='&quot;TCS&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]'>
+            <groupfilter function='member' level='[none:period:nk]' member='&quot;Period B (FY25 TO FY27 Q1)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='208' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='8'>TCS PERIOD B AVG DECOUPLING GAP</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='22'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]> pp]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D2FB723D-7203-45BB-8B7B-C4E88F3B81F5}' />
+    </worksheet>
+    <worksheet name='KPI - TCS Period B Revenue per Employee'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column-instance column='[revenue_per_employee_inr]' derivation='Avg' name='[avg:revenue_per_employee_inr:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column caption='Revenue Per Employee Inr' datatype='integer' default-format='n#,##0;-#,##0' name='[revenue_per_employee_inr]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]'>
+            <groupfilter function='member' level='[none:company:nk]' member='&quot;TCS&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]'>
+            <groupfilter function='member' level='[none:period:nk]' member='&quot;Period B (FY25 TO FY27 Q1)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_per_employee_inr:qk]' value='c&quot;₹ &quot;#,##0,,.00M;&quot;₹ &quot;-#,##0,,.00M' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_per_employee_inr:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>TCS PERIOD B AVG REVENUE PER EMPLOYEE
+</run>
+                <run fontalignment='0' fontsize='22'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_per_employee_inr:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CD99FBDB-AF8E-4484-9FA5-05436B7B93D6}' />
+    </worksheet>
+    <worksheet name='Margin vs Headcount Change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='14'>EBIT Margin Change vs Headcount Growth</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column-instance column='[Calculation_0765855259631616]' derivation='Attribute' name='[attr:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[headcount_qoq_growth_pct]' derivation='Avg' name='[avg:headcount_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[margin_change_pp]' derivation='Avg' name='[avg:margin_change_pp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_qoq_growth_pct]' derivation='Avg' name='[avg:revenue_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column caption='Margin Change Pp' datatype='real' name='[margin_change_pp]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855259631616]' derivation='None' name='[none:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+            <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:headcount_qoq_growth_pct:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:company:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:period:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:headcount_qoq_growth_pct:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:headcount_qoq_growth_pct:qk]' scope='cols' value='Headcount QoQ Growth (%)' />
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:margin_change_pp:qk]' scope='rows' value='Margin Change(pp)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='total' scope='rows' value='8' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='8' />
+            <format attr='font-size' data-class='total' scope='cols' value='8' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='8' />
+            <format attr='font-size' scope='cols' value='8' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <lod column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:Calculation_0765855259631616:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear'>
+              <excluded-factors>
+                <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:margin_change_pp:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:margin_change_pp:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Quarter: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Headcount QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:headcount_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[EBIT Margin Change: <[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:margin_change_pp:qk]> pp]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Revenue QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]>%]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.75762432813644409' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:margin_change_pp:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:headcount_qoq_growth_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{F674809A-71B4-4B65-88F7-7861744B6C6B}' />
+    </worksheet>
+    <worksheet name='Period Comparison'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='14'>Average Decoupling Gap: Period A vs Period B</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column-instance column='[decoupling_gap_pp]' derivation='Avg' name='[avg:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:company:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:period:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' member-value='&quot;TCS&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' scope='rows' value='Gap (pp)' />
+            <encoding attr='space' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' field-type='quantitative' max='2.5' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='height' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' value='23' />
+            <format attr='display' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='-90' />
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='N' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Company:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Period:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Avg. Decoupling Gap Pp:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk]> pp]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk] * [federated.174visr170rr5s1g41j7m0wqbp9t].[avg:decoupling_gap_pp:qk])</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</cols>
+      </table>
+      <simple-id uuid='{EB0EC8F5-8E5C-4726-B1F3-4ACD44E78123}' />
+    </worksheet>
+    <worksheet name='Revenue Per Employee Trend '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='14'>Revenue per Employee Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column caption='Quarter Index' datatype='integer' name='[Calculation_0765855260295169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([fiscal_year] - 2022) * 4 + [quarter_num]' />
+            </column>
+            <column-instance column='[Calculation_0765855259631616]' derivation='Attribute' name='[attr:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='Attribute' name='[attr:period:nk]' pivot='key' type='nominal' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855259631616]' derivation='None' name='[none:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+            <column caption='Revenue Per Employee Inr' datatype='integer' default-format='n#,##0;-#,##0' name='[revenue_per_employee_inr]' role='measure' type='quantitative' />
+            <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855260295169]' derivation='Sum' name='[sum:Calculation_0765855260295169:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[headcount_qoq_growth_pct]' derivation='Sum' name='[sum:headcount_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_per_employee_inr]' derivation='Sum' name='[sum:revenue_per_employee_inr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_qoq_growth_pct]' derivation='Sum' name='[sum:revenue_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' direction='ASC' using='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:Calculation_0765855260295169:qk]' />
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:company:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:period:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]' scope='rows' value='Revenue Per Employee ' />
+            <format attr='tick-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='subtotal' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]' value='8' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='8' />
+            <format attr='font-size' data-class='total' scope='rows' value='8' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]' value='c&quot;₹ &quot;#,##0,,.0M;&quot;₹ &quot;-#,##0,,.0M' />
+            <format attr='text-orientation' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' value='0' />
+            <format attr='font-size' scope='rows' value='8' />
+            <format attr='font-size' scope='cols' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#7f7f7f' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#00000037' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#f2f2f2' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:period:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:Calculation_0765855259631616:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Quarter: <[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:Calculation_0765855259631616:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Period: <[federated.174visr170rr5s1g41j7m0wqbp9t].[attr:period:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Revenue per Employee: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]> INR]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Revenue QoQ Growth:<[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Headcount QoQ Growth:<[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]>%]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.64767956733703613' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#00000006' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:revenue_per_employee_inr:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]</cols>
+      </table>
+      <simple-id uuid='{15772354-5A6C-4F39-B427-5DCDA4E20768}' />
+    </worksheet>
+    <worksheet name='Revenue vs Headcount Growth '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='14'>Revenue Growth vs Headcount Growth</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+            <column caption='Quarter Label' datatype='string' name='[Calculation_0765855259631616]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;FY&quot; + STR([fiscal_year]) + &quot; Q&quot; + STR([quarter_num])' />
+            </column>
+            <column-instance column='[revenue_qoq_growth_pct]' derivation='Avg' name='[avg:revenue_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Decoupling Gap Pp' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[decoupling_gap_pp]' role='measure' type='quantitative' />
+            <column caption='Fiscal Year' datatype='integer' name='[fiscal_year]' role='dimension' type='quantitative' />
+            <column caption='Headcount Qoq Growth Pct' datatype='real' name='[headcount_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0765855259631616]' derivation='None' name='[none:Calculation_0765855259631616:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+            <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+            <column caption='Quarter Num' datatype='integer' name='[quarter_num]' role='dimension' type='quantitative' />
+            <column caption='Revenue Qoq Growth Pct' datatype='real' name='[revenue_qoq_growth_pct]' role='measure' type='quantitative' />
+            <column-instance column='[decoupling_gap_pp]' derivation='Sum' name='[sum:decoupling_gap_pp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[headcount_qoq_growth_pct]' derivation='Sum' name='[sum:headcount_qoq_growth_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:company:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:period:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]</column>
+            <column>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' value='58' />
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' scope='cols' value='Revenue QoQ Growth (%)' />
+            <format attr='title' class='0' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' scope='rows' value='Headcount QoQ Growth (%) ' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='subtotal' scope='cols' value='8' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='8' />
+            <format attr='font-size' scope='rows' value='8' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' />
+              <lod column='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]' />
+              <tooltip column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='0%' label-type='custom' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]' z-order='1' />
+            <reference-line axis-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' enable-instant-analytics='true' formula='constant' id='refline2' label='0%' label-type='custom' scope='per-table' value='0.0' value-column='[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Company: <[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Quarter:<[federated.174visr170rr5s1g41j7m0wqbp9t].[none:Calculation_0765855259631616:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Revenue QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Headcount QoQ Growth: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Decoupling Gap: <[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:decoupling_gap_pp:qk]> pp]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.66966849565505981' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.174visr170rr5s1g41j7m0wqbp9t].[sum:headcount_qoq_growth_pct:qk]</rows>
+        <cols>[federated.174visr170rr5s1g41j7m0wqbp9t].[avg:revenue_qoq_growth_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{91A54791-4227-46BF-902F-3D30E930D36E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>TCS &amp; Indian IT Services: Revenue–Headcount Decoupling</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='wrap' id='dash-text_20' value='auto' />
+          <format attr='text-align' id='dash-text_42' value='auto' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+      </datasources>
+      <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+        <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+        <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+        <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+        <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='45333' id='29' param='horz' type-v2='layout-flow' w='98666' x='667' y='889'>
+            <zone fixed-size='1035' h='45333' id='44' is-fixed='true' type-v2='layout-basic' w='98666' x='667' y='889'>
+              <zone h='17384' id='13' param='vert' type-v2='layout-flow' w='98666' x='667' y='889'>
+                <zone fixed-size='46' h='6000' id='14' is-fixed='true' type-v2='title' w='98666' x='667' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='24' forceUpdate='true' h='3556' id='42' is-fixed='true' type-v2='text' w='98666' x='667' y='6889'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>FY2022–Q1 FY2027 | Revenue growth vs workforce growth across TCS, Infosys, Wipro &amp; HCLTech</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='114' h='7828' id='22' is-fixed='true' param='horz' type-v2='layout-flow' w='98666' x='667' y='10445'>
+                  <zone fixed-size='311' h='7828' id='24' is-fixed='true' name='KPI - TCS Decoupling Improvement' show-title='false' w='26584' x='667' y='10445'>
+                    <layout-cache fixed-size-h='79' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='326' h='7828' id='23' is-fixed='true' name='KPI - TCS Period B Decoupling' show-title='false' w='27834' x='27251' y='10445'>
+                    <layout-cache fixed-size-h='78' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='331' h='7828' id='25' is-fixed='true' name='KPI - TCS Period B Revenue per Employee' show-title='false' w='28250' x='55085' y='10445'>
+                    <layout-cache fixed-size-h='79' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='27949' id='45' param='vert' type-v2='layout-flow' w='98666' x='667' y='18273'>
+                <zone h='27949' id='11' type-v2='layout-basic' w='98666' x='667' y='18273'>
+                  <zone h='27949' id='26' param='horz' type-v2='layout-flow' w='49329' x='667' y='18273'>
+                    <zone h='27949' id='27' name='Decoupling Gap Trend' w='49329' x='667' y='18273'>
+                      <layout-cache fixed-size-w='486' minheight='191' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='27949' id='31' name='Period Comparison' w='49337' x='49996' y='18273'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='27889' id='32' param='horz' type-v2='layout-flow' w='49333' x='667' y='46222'>
+            <zone h='27889' id='33' name='Revenue vs Headcount Growth ' w='49333' x='667' y='46222'>
+              <layout-cache minwidth='156' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='27889' id='34' name='Revenue Per Employee Trend ' w='49333' x='50000' y='46222'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='25000' id='35' name='Margin vs Headcount Change' w='98666' x='667' y='74111'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='2667' id='20' type-v2='text' w='98667' x='1417' y='97556'>
+          <formatted-text>
+            <run fontcolor='#000000'>Decoupling Gap = Revenue QoQ Growth − Headcount QoQ Growth. Positive values indicate revenue growth outpaced headcount growth. Period A = FY22–FY24; Period B = FY25–Q1 FY27.</run>
+          </formatted-text>
+        </zone>
+        <zone h='5778' id='49' param='horz' type-v2='layout-flow' w='18250' x='80833' y='13556'>
+          <zone fixed-size='99' h='5778' id='50' is-fixed='true' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='filter' values='database' w='8917' x='80833' y='13556'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5778' id='51' mode='checkdropdown' name='Period Comparison' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' type-v2='filter' values='database' w='9333' x='89750' y='13556'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='11667' id='28' param='vert' type-v2='layout-flow' w='18250' x='80000' y='2667'>
+          <zone fixed-size='98' h='11667' id='30' is-fixed='true' name='Decoupling Gap Trend' pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='color' w='18250' x='80000' y='2667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>TCS &amp; Indian IT Services: Revenue–Headcount Decoupling</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='59' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='58' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='46' h='6000' id='14' type-v2='title' w='98666' x='667' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='24' forceUpdate='true' h='3556' id='42' type-v2='text' w='98666' x='667' y='6889'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>FY2022–Q1 FY2027 | Revenue growth vs workforce growth across TCS, Infosys, Wipro &amp; HCLTech</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='7828' id='24' is-fixed='true' name='KPI - TCS Decoupling Improvement' show-title='false' w='26584' x='667' y='10445'>
+                  <layout-cache fixed-size-h='79' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='7828' id='23' is-fixed='true' name='KPI - TCS Period B Decoupling' show-title='false' w='27834' x='27251' y='10445'>
+                  <layout-cache fixed-size-h='78' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='7828' id='25' is-fixed='true' name='KPI - TCS Period B Revenue per Employee' show-title='false' w='28250' x='55085' y='10445'>
+                  <layout-cache fixed-size-h='79' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='99' h='5778' id='50' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='filter' values='database' w='8917' x='80833' y='13556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='244' h='27949' id='27' is-fixed='true' name='Decoupling Gap Trend' w='49329' x='667' y='18273'>
+                  <layout-cache fixed-size-w='486' minheight='191' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='98' h='11667' id='30' name='Decoupling Gap Trend' pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='color' w='18250' x='80000' y='2667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5778' id='51' mode='checkdropdown' name='Period Comparison' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' type-v2='filter' values='database' w='9333' x='89750' y='13556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='244' h='27949' id='31' is-fixed='true' name='Period Comparison' w='49337' x='49996' y='18273'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='27889' id='33' is-fixed='true' name='Revenue vs Headcount Growth ' w='49333' x='667' y='46222'>
+                  <layout-cache minwidth='156' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='27889' id='34' is-fixed='true' name='Revenue Per Employee Trend ' w='49333' x='50000' y='46222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='217' h='25000' id='35' is-fixed='true' name='Margin vs Headcount Change' w='98666' x='667' y='74111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2667' id='20' type-v2='text' w='98667' x='1417' y='97556'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>Decoupling Gap = Revenue QoQ Growth − Headcount QoQ Growth. Positive values indicate revenue growth outpaced headcount growth. Period A = FY22–FY24; Period B = FY25–Q1 FY27.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{064029BA-F3BD-42C1-B62E-3518262A9E84}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='20'>TCS &amp; Indian IT Services: Revenue–Headcount Decoupling</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_32' value='auto' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='dashboard_dataset' name='federated.174visr170rr5s1g41j7m0wqbp9t' />
+      </datasources>
+      <datasource-dependencies datasource='federated.174visr170rr5s1g41j7m0wqbp9t'>
+        <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+        <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+        <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+        <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone fixed-size='110' friendly-name='Header Container' h='11555' id='33' is-fixed='true' param='horz' type-v2='layout-flow' w='74333' x='667' y='889'>
+            <zone fixed-size='900' friendly-name='Left Vertical Header Container' h='11555' id='34' is-fixed='true' param='vert' type-v2='layout-flow' w='74333' x='667' y='889'>
+              <zone friendly-name='Title' h='3556' id='7' type-v2='title' w='74333' x='667' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='892' friendly-name='Subtitle' h='7999' id='10' is-fixed='true' type-v2='text' w='74333' x='667' y='4445'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='10'>FY2022–Q1 FY2027 | Revenue growth vs workforce growth across TCS, Infosys, Wipro &amp; HCLTech</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='105' h='9445' id='19' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98666' x='667' y='12444'>
+            <zone h='9445' id='20' name='KPI - TCS Decoupling Improvement' show-title='false' w='32916' x='667' y='12444'>
+              <layout-cache fixed-size-h='181' fixed-size-w='159' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                <format attr='margin' value='5' />
+                <format attr='padding' value='12' />
+              </zone-style>
+            </zone>
+            <zone h='9445' id='21' name='KPI - TCS Period B Decoupling' show-title='false' w='32917' x='33583' y='12444'>
+              <layout-cache fixed-size-h='149' fixed-size-w='225' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                <format attr='margin' value='5' />
+                <format attr='padding' value='12' />
+              </zone-style>
+            </zone>
+            <zone h='9445' id='22' name='KPI - TCS Period B Revenue per Employee' show-title='false' w='32833' x='66500' y='12444'>
+              <layout-cache fixed-size-h='180' fixed-size-w='197' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                <format attr='margin' value='5' />
+                <format attr='padding' value='12' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='220' h='24778' id='23' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98666' x='667' y='21889'>
+            <zone fixed-size='592' h='24778' id='24' is-fixed='true' name='Decoupling Gap Trend' w='49333' x='667' y='21889'>
+              <layout-cache minheight='213' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='592' h='24778' id='26' is-fixed='true' name='Period Comparison' w='49333' x='50000' y='21889'>
+              <layout-cache minheight='486' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='220' h='24444' id='27' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98666' x='667' y='46667'>
+            <zone h='24444' id='28' name='Revenue vs Headcount Growth ' w='49333' x='667' y='46667'>
+              <layout-cache minheight='197' minwidth='152' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+              </zone-style>
+            </zone>
+            <zone h='24444' id='29' name='Revenue Per Employee Trend ' w='49333' x='50000' y='46667'>
+              <layout-cache cell-count-w='21' minheight='196' non-cell-size-w='96' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='190' h='24109' id='30' is-fixed='true' param='horz' type-v2='layout-flow' w='98666' x='667' y='71111'>
+            <zone h='24109' id='31' name='Margin vs Headcount Change' w='98666' x='667' y='71111'>
+              <layout-cache minheight='197' minwidth='146' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='27' forceUpdate='true' h='3891' id='32' is-fixed='true' type-v2='text' w='98666' x='667' y='95220'>
+            <formatted-text>
+              <run fontcolor='#000000'>Decoupling Gap = Revenue QoQ Growth − Headcount QoQ Growth. Positive values indicate revenue growth outpaced headcount growth. Period A = FY22–FY24; Period B = FY25–Q1 FY27.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12222' id='35' param='horz' type-v2='layout-flow' w='24833' x='75000' y='0'>
+          <zone h='12222' id='17' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' type-v2='filter' values='database' w='8277' x='75000' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='12222' id='16' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='filter' values='database' w='8277' x='83277' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='12222' id='25' name='Decoupling Gap Trend' pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='color' w='8279' x='91554' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontsize='20'>TCS &amp; Indian IT Services: Revenue–Headcount Decoupling</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='40' param='vert' type-v2='layout-flow' w='98666' x='667' y='889'>
+                <zone friendly-name='Title' h='3556' id='7' type-v2='title' w='74333' x='667' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='892' friendly-name='Subtitle' h='7999' id='10' type-v2='text' w='74333' x='667' y='4445'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='10'>FY2022–Q1 FY2027 | Revenue growth vs workforce growth across TCS, Infosys, Wipro &amp; HCLTech</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='9445' id='20' is-fixed='true' name='KPI - TCS Decoupling Improvement' show-title='false' w='32916' x='667' y='12444'>
+                  <layout-cache fixed-size-h='181' fixed-size-w='159' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='9445' id='21' is-fixed='true' name='KPI - TCS Period B Decoupling' show-title='false' w='32917' x='33583' y='12444'>
+                  <layout-cache fixed-size-h='149' fixed-size-w='225' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='9445' id='22' is-fixed='true' name='KPI - TCS Period B Revenue per Employee' show-title='false' w='32833' x='66500' y='12444'>
+                  <layout-cache fixed-size-h='180' fixed-size-w='197' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12222' id='17' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:period:nk]' type-v2='filter' values='database' w='8277' x='75000' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12222' id='16' mode='checkdropdown' name='Decoupling Gap Trend' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='filter' values='database' w='8277' x='83277' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='213' h='24778' id='24' is-fixed='true' name='Decoupling Gap Trend' w='49333' x='667' y='21889'>
+                  <layout-cache minheight='213' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12222' id='25' name='Decoupling Gap Trend' pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type-v2='color' w='8279' x='91554' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='213' h='24778' id='26' is-fixed='true' name='Period Comparison' w='49333' x='50000' y='21889'>
+                  <layout-cache minheight='486' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='210' h='24444' id='28' is-fixed='true' name='Revenue vs Headcount Growth ' w='49333' x='667' y='46667'>
+                  <layout-cache minheight='197' minwidth='152' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='210' h='24444' id='29' is-fixed='true' name='Revenue Per Employee Trend ' w='49333' x='50000' y='46667'>
+                  <layout-cache cell-count-w='21' minheight='196' non-cell-size-w='96' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='207' h='24109' id='31' is-fixed='true' name='Margin vs Headcount Change' w='98666' x='667' y='71111'>
+                  <layout-cache minheight='197' minwidth='146' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='27' forceUpdate='true' h='3891' id='32' type-v2='text' w='98666' x='667' y='95220'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>Decoupling Gap = Revenue QoQ Growth − Headcount QoQ Growth. Positive values indicate revenue growth outpaced headcount growth. Period A = FY22–FY24; Period B = FY25–Q1 FY27.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{09930E88-B70F-4946-A312-ACE1932B52B8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Decoupling Gap Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BFB16507-95B0-4355-B373-7D4C6F51EDC0}' />
+    </window>
+    <window class='worksheet' name='Period Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4437F9CA-D20A-4943-B2AA-B83DC18DEAD4}' />
+    </window>
+    <window class='worksheet' name='Decoupling Improvement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F2E6B67C-A76B-4D77-8E80-CC71EB95E662}' />
+    </window>
+    <window class='worksheet' name='Revenue Per Employee Trend '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7FC9D84F-67D5-4458-A5F1-2ADDB339D62E}' />
+    </window>
+    <window class='worksheet' name='Margin vs Headcount Change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{19D2FCED-B04B-44DE-A58A-0AA76B6D30E1}' />
+    </window>
+    <window class='worksheet' name='Attrition Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{93286770-4D7D-4B33-83B2-800548495816}' />
+    </window>
+    <window class='worksheet' name='Revenue vs Headcount Growth '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.174visr170rr5s1g41j7m0wqbp9t].[none:company:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1968E29E-8CE8-4023-A3DB-7EE9E8AD15FA}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Decoupling Gap Trend' />
+        <viewpoint name='KPI - TCS Decoupling Improvement'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI - TCS Period B Decoupling'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI - TCS Period B Revenue per Employee'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Margin vs Headcount Change'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Period Comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue Per Employee Trend '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue vs Headcount Growth '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0672725B-AACA-4957-9D00-84AB5CE76A99}' />
+    </window>
+    <window class='worksheet' name='KPI - TCS Period B Decoupling'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46A51283-EC36-4F36-8C10-3E67A75AA62A}' />
+    </window>
+    <window class='worksheet' name='KPI - TCS Decoupling Improvement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD7F0F34-FC5C-406A-A5AB-71AE74E7740B}' />
+    </window>
+    <window class='worksheet' name='KPI - TCS Period B Revenue per Employee'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{697FCA53-F90A-471A-9C93-F674E02D1547}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Decoupling Gap Trend'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI - TCS Decoupling Improvement'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI - TCS Period B Decoupling'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI - TCS Period B Revenue per Employee'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Margin vs Headcount Change'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Period Comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue Per Employee Trend '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue vs Headcount Growth '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='29' />
+      <simple-id uuid='{6894F189-11A6-4D92-A39D-F95C69CDA557}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Revenue Per Employee Trend ' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
