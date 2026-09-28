@@ -29,7 +29,7 @@ stakeholder to understand:
 
 ## Key Findings
 
-### 1. TCS's revenue growth became more decoupled from headcount growth, but it was not the largest peer improvement
+### 1. TCS's revenue growth became less tightly coupled with headcount growth, but it was not the largest peer improvement
 
 TCS's average decoupling gap increased from:
 
@@ -51,6 +51,9 @@ revenue-headcount relationship, but the magnitude of its change was smaller
 than the changes observed for HCLTech and Infosys.
 
 Wipro moved in the opposite direction.
+
+The result should therefore be interpreted as a broader but uneven peer-group
+pattern rather than a TCS-only phenomenon.
 
 ---
 
@@ -91,6 +94,9 @@ not unique to TCS.
 The dataset cannot determine whether this was caused by changes in hiring,
 employee demand, labor-market conditions, compensation, or other factors.
 
+Attrition is therefore treated as supporting workforce context rather than as
+a component of the decoupling-gap calculation.
+
 ---
 
 ### 4. The relationship between margin change and headcount growth differs by company
@@ -115,7 +121,11 @@ These results are directional rather than causal.
 
 The correlations are based on approximately 20 usable quarter-to-quarter
 observations per company and should therefore not be interpreted as
-statistically robust evidence of causation.
+statistically definitive evidence of causation.
+
+Correlation measures the direction and strength of association within the
+observed sample; it does not establish that changes in headcount or revenue
+caused changes in EBIT margin.
 
 ---
 
@@ -144,58 +154,105 @@ It can also be influenced by:
 - Acquisitions
 - Business composition
 
+Revenue per employee should therefore be interpreted alongside the decoupling
+gap rather than as a standalone productivity measure.
+
 ---
 
 # What the Dashboard Shows
 
-The Tableau dashboard is designed to answer five connected questions:
+The Tableau dashboard is designed to answer five connected questions.
 
-### 1. Is revenue growth increasingly outpacing headcount growth?
+## 1. Is revenue growth increasingly outpacing headcount growth?
 
-**Decoupling Gap Trend**
+### Decoupling Gap Trend
 
 Shows the quarterly decoupling gap for each company.
 
+A positive value means revenue QoQ growth exceeded headcount QoQ growth.
+
+The zero reference line makes it easier to identify quarters where revenue
+growth and headcount growth moved in different directions.
+
+The visualization focuses on the relative movement of revenue and headcount
+rather than treating the metric as a direct measure of employee productivity.
+
 ---
 
-### 2. Did the revenue-headcount relationship change between the two periods?
+## 2. Did the revenue-headcount relationship change between the two periods?
 
-**Period Comparison**
+### Period Comparison
 
 Compares the average decoupling gap between:
 
-- Period A: FY22–FY24
-- Period B: FY25–Q1 FY27
+- **Period A:** FY22–FY24
+- **Period B:** FY25–Q1 FY27
+
+This provides the main period-level comparison used to evaluate whether the
+relationship between revenue and headcount changed over time.
+
+The comparison is descriptive and does not establish that the change in Period
+B was caused by a particular operational factor.
 
 ---
 
-### 3. How are revenue growth and headcount growth moving together?
+## 3. How are revenue growth and headcount growth moving together?
 
-**Revenue Growth vs Headcount Growth**
+### Revenue Growth vs Headcount Growth
 
 A scatterplot showing quarterly revenue growth against quarterly headcount
 growth.
 
-The zero reference lines divide periods of positive and negative growth.
+The zero reference lines divide the chart into four growth combinations:
+
+- Positive revenue growth / positive headcount growth
+- Positive revenue growth / negative headcount growth
+- Negative revenue growth / positive headcount growth
+- Negative revenue growth / negative headcount growth
+
+The positive-revenue / negative-headcount quadrant is particularly relevant to
+the decoupling question because it identifies quarters where revenue increased
+while headcount decreased.
+
+This quadrant should not automatically be interpreted as evidence of
+productivity improvement because other factors can produce the same pattern.
 
 ---
 
-### 4. Is revenue per employee increasing?
+## 4. Is revenue per employee increasing?
 
-**Revenue Per Employee Trend**
+### Revenue Per Employee Trend
 
 Shows the quarterly revenue-per-employee trajectory for the four companies.
 
+Revenue per employee is calculated as:
+
+**Revenue Per Employee = (Revenue in ₹ crore × 10,000,000) / Headcount**
+
+The result is expressed in Indian rupees per employee.
+
+The metric is used as an efficiency proxy and should not be interpreted as a
+direct measure of individual employee productivity.
+
+Differences in pricing, utilization, service mix, employee mix, currency,
+subcontracting, acquisitions, and business composition can affect the metric.
+
 ---
 
-### 5. Is workforce growth associated with changes in EBIT margin?
+## 5. Is workforce growth associated with changes in EBIT margin?
 
-**EBIT Margin Change vs Headcount Growth**
+### EBIT Margin Change vs Headcount Growth
 
 Shows the relationship between quarterly headcount growth and quarterly
 changes in EBIT margin.
 
 A trend line is used for directional analysis only.
+
+The visualization does not establish that headcount changes caused changes in
+profitability.
+
+The correlation analysis is exploratory and uses approximately 20 usable
+quarter-to-quarter observations per company.
 
 ---
 
@@ -203,7 +260,8 @@ A trend line is used for directional analysis only.
 
 The final dashboard is published on Tableau Public.
 
-**Tableau Public:**  
+**Tableau Public:**
+
 https://public.tableau.com/shared/SC4DT9NSM?:display_count=n&:origin=viz_share_link
 
 The dashboard contains:
@@ -220,19 +278,58 @@ The dashboard contains:
 
 ---
 
-# Visualizations
+# Dashboard Design
 
-## 1. Decoupling Gap Trend
+## Dashboard Title
 
-**Purpose:**  
-Track how the relationship between revenue growth and headcount growth changes
-quarter by quarter.
+**TCS & Indian IT Services: Revenue–Headcount Decoupling**
 
-**Metric:**
+## Subtitle
 
-```text
-Decoupling Gap
-=
-Revenue QoQ Growth %
+**FY2022–Q1 FY2027 | Revenue growth vs workforce growth across TCS, Infosys,
+Wipro & HCLTech**
+
+The title communicates the main analytical theme while the subtitle identifies
+the study period and companies included.
+
+---
+
+# Methodology Note
+
+The dashboard includes the following methodology note:
+
+> **Decoupling Gap = Revenue QoQ Growth − Headcount QoQ Growth. Positive values
+> indicate revenue growth outpaced headcount growth. Period A = FY22–FY24;
+> Period B = FY25–Q1 FY27.**
+
+This note allows dashboard users to understand the main metric without having
+to open the supporting project documentation.
+
+---
+
+# KPI Cards
+
+The dashboard uses KPI cards to surface the most important summary metrics.
+
+## KPI 1 — Decoupling Improvement
+
+Shows the change in average decoupling gap between Period A and Period B.
+
+For TCS:
+
+**+0.80 pp**
+
+The underlying calculation is:
+
+```tableau
+AVG(
+    IF [Period] = "Period B (FY25 TO FY27 Q1)"
+    THEN [Decoupling Gap Pp]
+    END
+)
 -
-Headcount QoQ Growth %
+AVG(
+    IF [Period] = "Period A (FY22 TO FY24)"
+    THEN [Decoupling Gap Pp]
+    END
+)
