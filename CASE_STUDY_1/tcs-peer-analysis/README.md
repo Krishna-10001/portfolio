@@ -1,23 +1,108 @@
 # TCS vs. Peer IT Majors — Revenue, Headcount & Margin Trend Analysis
 
-A data analytics case study examining whether TCS's 2025-26 workforce reduction reflects
-a structural shift in the IT services business model, benchmarked against Infosys, Wipro,
-and HCLTech.
+A data analytics case study examining how the relationship between revenue growth
+and workforce growth has changed across four major Indian IT-services companies:
+**TCS, Infosys, Wipro, and HCLTech**, from **FY22 through Q1 FY27**.
+
+The project investigates whether revenue is becoming less tightly coupled with
+headcount growth and whether this pattern is specific to TCS or visible across
+the broader peer group.
+
+The analysis combines quarterly financial, workforce, profitability, and
+attrition data with SQL-based transformations and an interactive Tableau
+dashboard.
+
+---
 
 ## Business Question
-Is TCS decoupling revenue growth from headcount growth faster than its industry peers,
-and what does that mean for the traditional IT-services hiring pyramid?
+
+**Is TCS decoupling revenue growth from headcount growth faster or slower than
+its industry peers, and what does the changing revenue-headcount relationship
+signal about the traditional IT-services hiring model?**
+
+Rather than treating AI-driven productivity as a proven explanation, the project
+tests whether the underlying revenue and workforce data show evidence of a
+changing relationship.
+
+---
+
+## Analytical Scope
+
+### Companies
+
+- **TCS**
+- **Infosys**
+- **Wipro**
+- **HCLTech**
+
+### Study Period
+
+**Q1 FY22 through Q1 FY27**
+
+This represents:
+
+- 21 quarters per company
+- 4 companies
+- 84 company-quarter observations
+
+### Analytical Periods
+
+| Period | Coverage |
+|---|---|
+| Period A | FY22–FY24 |
+| Period B | FY25–Q1 FY27 |
+
+Period A represents the earlier comparison period, while Period B represents
+the later period used to examine whether the revenue-headcount relationship
+changed.
+
+---
+
+## Guiding Questions
+
+The analysis addresses five questions:
+
+1. How do revenue, headcount, attrition, and EBIT margin trends compare across
+   TCS, Infosys, Wipro, and HCLTech?
+2. How did the **decoupling gap** change between Period A and Period B across
+   the four companies?
+3. Is TCS an outlier, or is the changing revenue-headcount relationship visible
+   across the selected peer group?
+4. How does **revenue per employee** change across companies and between the
+   two analytical periods?
+5. Does EBIT margin change show a stronger relationship with headcount growth
+   or revenue growth?
+
+---
+
+## Core Metric: Decoupling Gap
+
+The central metric in the project is:
+
+```text
+Decoupling Gap =
+Revenue QoQ Growth % − Headcount QoQ Growth %
+```
+
+A positive decoupling gap means revenue growth outpaced headcount growth during
+that quarter. A higher average decoupling gap in Period B indicates greater
+separation between revenue growth and workforce growth compared to Period A.
+
+---
 
 ## Tools
+
 SQL (PostgreSQL) · Python (pandas, for data validation) · Tableau
 
 ## Project Structure
 - `docs/` — Ask, Prepare, Process, Analyze, Share, Act documentation
-- `data/` — raw and processed datasets
+- `data/` — raw source data (`raw/factsheets/`) and processed analytical datasets (`processed/`)
 - `sql/` — schema and analysis queries
 - `scripts/` — data validation script
-- `dashboards/` — final Tableau workbook
-- `reports/` — exported visuals
+- `dashboards/tableau/` — final dashboard workbook (`final/`) and earlier iterations (`archive/`)
+- `reports/images/` — exported dashboard visuals
+
+---
 
 ## Key Findings
 - **TCS is not the strongest "decoupler" among its peers.** Its average
@@ -46,7 +131,10 @@ SQL (PostgreSQL) · Python (pandas, for data validation) · Tableau
   per company — directional, not statistically robust.)
 
 ## Dashboard
-_(add your Tableau Public link once published)_
+
+![Final Tableau dashboard](reports/images/00_final_dashboard.png)
+
+**Tableau Public:** https://public.tableau.com/shared/SC4DT9NSM?:display_count=n&:origin=viz_share_link
 
 ## Author
 Krishna Jagtap
