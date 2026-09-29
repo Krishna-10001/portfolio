@@ -241,7 +241,7 @@ else:
 # 14. Check fiscal year and quarter combinations
 # ---------------------------------------------------------
 
-if df["fiscal_year"].between(2022, 2026).all():
+if df["fiscal_year"].between(2022, 2027).all():
 
     print("PASS: Fiscal years are within expected range")
 

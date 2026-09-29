@@ -27,11 +27,8 @@ The original quarterly source documents are retained in:
 The analysis uses publicly reported company disclosures from:
 
 - Tata Consultancy Services (TCS)
-
 - Infosys
-
 - Wipro
-
 - HCLTech
 
 The primary source materials are quarterly financial results, fact sheets,
@@ -275,16 +272,21 @@ The four companies do not publish identical documents or use identical labels.
 For example:
 
 - TCS frequently reports operating margin and workforce information in
+
   quarterly fact sheets.
 
 - Infosys provides quarterly fact sheets containing revenue, margin,
+
   workforce, and attrition information.
 
 - Wipro provides quarterly financial and investor disclosures containing the
+
   required financial metrics, with workforce and other operating information
+
   sometimes requiring supporting disclosures.
 
 - HCLTech provides quarterly financial and investor materials from which the
+
   required metrics are extracted.
 
 The exact source document therefore varies according to the company's
